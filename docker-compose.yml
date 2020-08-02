@@ -1,0 +1,16 @@
+version: '3'
+services:
+  wp:
+    image: "apnic-virtual-labs"
+    ports:
+      - "80:80"
+    environment:
+      WORDPRESS_DB_PASSWORD: qwerty
+  mysql:
+    image: "mysql:5.7"
+    environment:
+      MYSQL_ROOT_PASSWORD: qwerty
+    volumes:
+      - "wp-datavolume:/var/lib/mysql"
+volumes:
+  wp-datavolume:

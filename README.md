@@ -1,10 +1,11 @@
-# APNIC Virtual Labs
 
-## Docs
+## APNIC Virtual Labs
+
+### Docs
 
 - [Dockerised WordPress](./docs/dockerised-wordpress.md)
 
-## Brief
+### Brief
 
 1. Create/Use a Dockerised version of WordPress
 2. Write code to consume this list: https://academy.apnic.net/wp-json/academy/virtual-labs
