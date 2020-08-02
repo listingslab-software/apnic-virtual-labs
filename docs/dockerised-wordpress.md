@@ -11,13 +11,12 @@
 
 A Volume for persisting data is created in the YAML file, but the database needs to be populated the first time the image is run
 
+#### Restore
+```bash
+docker exec -i apnic-virtual-labs_mysql_1 sh -c 'exec mysql -uroot -p"$MYSQL_ROOT_PASSWORD"' < wordpress/database.sql
+```
 
 #### Dump
 ```bash
 docker exec apnic-virtual-labs_mysql_1 sh -c 'exec mysqldump --all-databases -uroot -p"$MYSQL_ROOT_PASSWORD"' > wordpress/database.sql
-```
-
-#### Restore
-```bash
-docker exec -i apnic-virtual-labs_mysql_1 sh -c 'exec mysql -uroot -p"$MYSQL_ROOT_PASSWORD"' < wordpress/database.sql
 ```

@@ -8,7 +8,7 @@ import { DndProvider } from 'react-dnd'
 import { HTML5Backend } from 'react-dnd-html5-backend'
 import App from './App'
 
-console.log(`${pJSON.name} ${pJSON.version} (${process.env.REACT_APP_ENV})`)
+console.log(`${pJSON.name} ${pJSON.version}`)
 
 const store = reduxStore()
 export const getStore = () => { return store }
