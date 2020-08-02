@@ -10,10 +10,14 @@
  */
  
  function apnic_virtual_labs($atts) {
+ 	$needle = 'src="/';
+ 	$haystack = file_get_contents(dirname(__FILE__) . '/app/build/index.html');
+ 	$newNeedle = 'src="' . plugin_dir_url(__FILE__) . 'app/build/';
+ 	$app = str_replace($needle, $newNeedle, $haystack);
 	$ReactApp .= '<div class="virtual-labs">';
-	$ReactApp .= 'React App';
+	$ReactApp .= $app;
 	$ReactApp .= '</div>';
-	return $ReactApp;
+    return $ReactApp;
 }
 
 add_shortcode('apnic-virtual-labs', 'apnic_virtual_labs');
