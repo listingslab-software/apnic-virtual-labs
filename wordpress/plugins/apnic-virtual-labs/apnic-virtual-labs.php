@@ -3,7 +3,7 @@
  * Plugin Name: APNIC Virtual Labs
  * Plugin URI: https://listingslab.com/work/apnic
  * Description: Displays a list of APNIC Virtual Labs in WordPress via the shortcode [apnic-virtual-labs]
- * Version: 0.1
+ * Version: 0.1.1
  * Text Domain: apnic
  * Author: listingslab
  * Author URI: https://listingslab.com
