@@ -4,6 +4,7 @@
 ### Docs
 
 - [Dockerised WordPress](./docs/dockerised-wordpress.md)
+- [WordPress Plugin](./docs/wordpress-plugin.md)
 
 ### Brief
 
