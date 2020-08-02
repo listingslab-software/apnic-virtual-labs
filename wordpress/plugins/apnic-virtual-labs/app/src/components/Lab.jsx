@@ -2,7 +2,7 @@ import React, { useRef } from 'react'
 import { useDrag, useDrop } from 'react-dnd'
 import {
   makeStyles,
-  ButtonBase,
+  // ButtonBase,
   Typography,
   Grid,
 } from '@material-ui/core/'
@@ -104,11 +104,13 @@ export const Lab = ({ id, lab, index, moveCard }) => {
             <Typography className={classes.labTitle}>
               {lab.name}
             </Typography>
-            <Typography  className={classes.labDuration}>
-              {lab.formattedDuration}, {lab.language}
-            </Typography>
+            
             <Typography  className={classes.labDescription}>
               {lab.description}
+            </Typography>
+
+            <Typography  className={classes.labDuration}>
+              {lab.formattedDuration}, {lab.language}
             </Typography>
             
           </Grid>

@@ -24,7 +24,7 @@ export default function PageSize() {
   return  <Grid container>
                 <Grid item>
                   <Typography>
-                      -
+                      
                   </Typography>
                 </Grid>
                 <Grid item xs={8}>
@@ -43,7 +43,7 @@ export default function PageSize() {
                 </Grid>
                 <Grid item>
                   <Typography>
-                      +
+                      
                   </Typography>
                 </Grid>
               </Grid>
