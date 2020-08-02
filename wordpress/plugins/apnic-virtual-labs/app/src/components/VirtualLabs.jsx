@@ -56,6 +56,7 @@ export default function VirtualLabs() {
     loading,
     loaded,
     pageSize,
+    currentPage,
   } = appSlice
 
   const moveCard = useCallback((dragIndex, hoverIndex) => {
@@ -89,7 +90,7 @@ export default function VirtualLabs() {
                     </Alert>
 
   if (loading && !loaded) return  <div className={classes.progress}>
-                                    <LinearProgress />
+                                    <LinearProgress color={`primary`} />
                                   </div>
 
   if (!labList.length) return null
@@ -110,9 +111,12 @@ export default function VirtualLabs() {
               </Grid>
               
               { labList.map((lab, i) => {
-                if (i > pageSize-1) return null
-                return renderLab(lab, i)
+                const start = pageSize * (currentPage -1)
+                const end = start + pageSize
+                if ( i > start && i <= end) return renderLab(lab, i)
+                  return null
               })}
               
       		</div>
 }
+

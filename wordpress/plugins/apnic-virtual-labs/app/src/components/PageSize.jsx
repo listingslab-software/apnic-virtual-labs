@@ -23,8 +23,8 @@ export default function PageSize() {
 
   return  <Grid container>
                 <Grid item>
-                  <Typography>
-                      
+                  <Typography style={{marginRight: 8, fontSize: 16}}>
+                      {pageSize}
                   </Typography>
                 </Grid>
                 <Grid item xs={8}>
@@ -38,14 +38,11 @@ export default function PageSize() {
                       max={labList.length}
                       onChange={(e, val) => {
                         dispatch({type: `APP/PAGESIZE`, pageSize: val})
+                        dispatch({type: `APP/CURRENTPAGE`, currentPage: 1})
                       }}
                     />
                 </Grid>
-                <Grid item>
-                  <Typography>
-                      
-                  </Typography>
-                </Grid>
+                
               </Grid>
 
 }

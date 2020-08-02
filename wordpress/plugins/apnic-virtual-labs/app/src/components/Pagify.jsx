@@ -28,8 +28,7 @@ export default function Pagify() {
 
   return	<Pagination 
             size={`small`}
-            variant={`outlined`}
-    				
+            shape={`rounded`}
   	  			count={totalPages} 
   	  			page={currentPage} 
   	  			onChange={onChange} 

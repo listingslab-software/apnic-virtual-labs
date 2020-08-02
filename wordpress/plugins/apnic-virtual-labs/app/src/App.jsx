@@ -37,7 +37,6 @@ export default function App() {
 
 	const classes = useStyles()
 	return	<MuiThemeProvider theme={createMuiTheme(themeLight)}>
-				
 				<div className={classes.app} >
 					<VirtualLabs />
 				</div>
