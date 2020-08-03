@@ -22,12 +22,11 @@ export default function Pagify() {
   }
 
   let totalPages = Math.floor(labList.length/pageSize)
-
-//  console.log (totalPages)
   if (totalPages < 2) return null
 
   return	<Pagination 
             size={`small`}
+            color={`primary`}
             shape={`rounded`}
   	  			count={totalPages} 
   	  			page={currentPage} 

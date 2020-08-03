@@ -8,10 +8,10 @@ export const themeLight = {
       paper: '#fff',
     },
     primary: {
-      main: '#de004a',
+      main: '#0079c0',
     },
     secondary: {
-      main: '#e7487d',
+      main: '#dc6e00',
     },
   }
 }
