@@ -1,13 +1,19 @@
 
 ## APNIC Virtual Labs
 
+### Run in Docker
+
+
 ```bash
 git clone https://github.com/listingslab-software/apnic-virtual-labs.git
 cd apnic-virtual-labs
 docker build -t apnic-virtual-labs .
 docker-compose up -d
-docker exec -i apnic-virtual-labs_mysql_1 sh -c 'exec mysql -uroot -p"$MYSQL_ROOT_PASSWORD"' < wordpress/database.sql
+docker exec -i apnic-virtual-labs_mysql_1 sh -c \
+	'exec mysql -uroot -p"$MYSQL_ROOT_PASSWORD"' < wordpress/database.sql
 ```
+
+Open http://localhost. You can login with username **apnic** password **apnic123**
 
 ### Docs
 
