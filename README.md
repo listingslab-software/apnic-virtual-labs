@@ -19,7 +19,7 @@ Open http://localhost. You can login with username **apnic** password **apnic123
 
 - [Dockerised WordPress](./docs/dockerised-wordpress.md)
 - [WordPress Plugin](./docs/wordpress-plugin.md)
-- [React](./docs/wordpress-plugin.md)
+- [React](./docs/react.md)
 
 ### Brief
 
